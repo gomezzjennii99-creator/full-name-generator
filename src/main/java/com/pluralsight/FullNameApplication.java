@@ -1,8 +1,9 @@
 package com.pluralsight;
- import java.util.Scanner;
+
+import java.util.Scanner;
 
 public class FullNameApplication {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 
         //we need a scanner
@@ -28,7 +29,7 @@ public class FullNameApplication {
         //always print the first and last name
         //if they gave a middle name and/or suffix, print it
         String fullName = firstName;
-        if(middleName.length() ==0) {
+        if (middleName.length() == 0) {
             fullName += " ";
         } else {
             fullName += " " + middleName;
@@ -36,9 +37,9 @@ public class FullNameApplication {
 
         fullName += " " + lastName;
 
-        if(!suffix.isBlank()){
-            fullName +=  ", " + suffix;
+        if (!suffix.isBlank()) {
+            fullName += ", " + suffix;
         }
-                System.out.println(fullName);
+        System.out.println(fullName);
     }
 }
